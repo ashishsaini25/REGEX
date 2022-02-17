@@ -9,10 +9,10 @@ namespace UserRegistration
 {
     public  class Pattern
     {
-        public static string firstname = "^[A-Z]{1}[a-z,A-Z,0-9]{2,}$";
+        public static string lastname = "^[A-Z]{1}[a-z,A-Z,0-9]{2,}$";
         public bool Validate(string Firstname)
         {
-            return Regex.IsMatch(Firstname, firstname);
+            return Regex.IsMatch(Firstname, lastname);
         }
     }
 }
