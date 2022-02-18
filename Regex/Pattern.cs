@@ -9,10 +9,10 @@ namespace UserRegistration
 {
     public  class Pattern
     {
-        public static string mobilenumber = "^[0-9]{2}[ ]{1}[6-9]{1}[0-9]{9}$";
-        public bool Validate(string Mobilenumber)
+        public static string password = "^[0-9A-Za-z@#$%^&*_-]{0,7}[A-Z]{1}[0-9A-Za-z@#$%^&*_-]*$";
+        public bool Validate(string Password)
         {
-            return Regex.IsMatch(Mobilenumber,mobilenumber);
+            return Regex.IsMatch(Password,password);
         }
     }
 }
