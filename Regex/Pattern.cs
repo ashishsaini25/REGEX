@@ -9,7 +9,7 @@ namespace UserRegistration
 {
     public  class Pattern
     {
-        public static string password = "^[0-9A-Za-z@#$%^&*_-]{0,7}[A-Z]{1}[0-9A-Za-z@#$%^&*_-]*$";
+        public static string password = "^(?=[a-zA-Z0-9#@$?]{8,}$)(?=.*?[a-z])(?=.*?[A-Z])(?=.*?[0-9]).*$";
         public bool Validate(string Password)
         {
             return Regex.IsMatch(Password,password);
