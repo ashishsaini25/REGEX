@@ -11,8 +11,12 @@ namespace UserRegistration
         static void Main(string[] args)
         {
             Pattern pattern = new Pattern();
-            bool ok= pattern.Validate("p17yggjvkj");
-            Console.WriteLine(ok);  
+            for (int i = 0; i < 10; i++)
+            {
+                string s = Console.ReadLine();
+                bool ok = pattern.Validate(s);
+                Console.WriteLine(ok);
+            }
         }
     }
 }
